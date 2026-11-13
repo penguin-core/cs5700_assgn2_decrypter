@@ -41,7 +41,7 @@ def perform_statistical_analysis(ciphertext):
     correl = {}
     # There are 256 (2^8) possible keys from 0 to 255 because encyption algorithm uses bytearray
     # which stores each element as a byte (8 bits).
-    for k in range(255):
+    for k in range(256):
         for c, f in freq.items():
             # Character we would get when `c` is decrypted with the key `k`. Encryption algorithm
             # uses "Stream Cipher".
